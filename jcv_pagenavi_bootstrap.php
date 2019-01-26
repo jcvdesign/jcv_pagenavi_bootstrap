@@ -48,10 +48,10 @@ class Jcv_Pagenavi_Bootstrap{
 				  
 				  $out = '';
 				  $out = str_replace('<div','',$html);
-				  $out = str_replace("class='wp-pagenavi'>",'',$out);
+				  $out = str_replace("class='wp-pagenavi' role='navigation'>",'',$out);
 				  $out = str_replace('<a','<li class="page-item"><a class="page-link"',$out);
 				  $out = str_replace('</a>','</a></li>',$out);
-				  $out = str_replace("<span class='current'",'<li class="page-item active"><span class="page-link current"',$out);
+				  $out = str_replace("<span aria-current='page' class='current'",'<li class="page-item active"><span class="page-link current"',$out);
 				  $out = str_replace("<span class='extend'",'<li class="page-item"><span class="page-link extend"',$out);
 				  $out = str_replace('</span>','</span></li>',$out);
 				  $out = str_replace('</div>','',$out);
